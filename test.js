@@ -1,2 +1,5 @@
 // test text 
-test commit
+
+const logTest = () => {
+    console.log('test');
+}
