@@ -8,6 +8,6 @@ const conflictTestFn = (id) => {
     if (typeof id === 'string') {
         console.log('this is string type');
     } else {
-        console.log('this is not string type');
+        console.log(`this is ${typeof id} type`);
     }
 }
