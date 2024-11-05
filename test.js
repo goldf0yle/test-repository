@@ -4,6 +4,10 @@ const logTest = () => {
     console.log('test');
 }
 
-const conflictTestFucntionFromOtherBranch = (id) => {
-    console.log(typeof id);
+const conflictTestFn = (id) => {
+    if (typeof id === 'string') {
+        console.log('this is string type');
+    } else {
+        console.log('this is not string type');
+    }
 }
