@@ -15,3 +15,5 @@
 2. git checkout
 3. git merge
 4. git status
+
+하하하 공부하기 싫다~~ 
