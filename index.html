@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>이규진</title>
+        <link rel="stylesheet" href="./index.css">
+        <style>
+            header {
+                text-align: center;
+                height: 60px;
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 60px;
+            }
+            a {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+                display: block;
+            }
+            ul {
+                list-style: none;
+            }
+
+            nav {
+                display: flex;
+                width: 100%;
+                height: 80px;
+                justify-content: center;
+            }
+            nav > ul {
+                padding: 0;
+                width: fit-content;
+                display: flex;
+                align-items: center;
+                gap: 24px;
+            }
+            nav > ul > li {
+                box-sizing: border-box;
+                padding: 2px 4px;
+                border-radius: 4px;
+                transition: background-color 0.3s;
+                background-color: transparent;
+            }
+            nav > ul > li:hover {
+                background-color: #EEEEEE;
+            }
+
+            main {
+                width: 1200px;
+                margin: 0 auto;
+            }
+            main > ul {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+            }
+
+            footer {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 40px;
+                text-align: center;
+                background-color: #FFFFFF;
+            }
+        </style>
+    <body>
+        <header><a href="/index.html">DEEP DIVE</a></header>
+        <nav>
+            <ul>
+                <li><a href="/introduction.html">introduction</a></li>
+                <li><a href="/form.html">form</a></li>
+                <li><a href="/table.html">table</a></li>
+                <li><a href="/inputs.html">inputs</a></li>
+                <li><a href="/sementic.html">sementic</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>DEEP DIVE MISSION</h2>
+            <ul>
+                <li class="mission-item">
+                    <strong>(1일차) 2024.11.05</strong>
+                    <ol>
+                        <li>(구름EXP) Github 프로필 생성 및 EXP 프로필 연동하기</li>
+                        <li>새로운 local repository 생성 및 연동하기</li>
+                        <li>기본 Git 워크플로(커밋,  푸시, 풀, 병합) 마스터하기</li>
+                        <li>README 파일 작성하고 커밋하기</li>
+                        <li>branch 생성 및 전환하기</li>
+                        <li>브랜치 전략 설계하기</li>
+                        <li>Git 명령어 사용하기</li>
+                    </ol>
+                </li>
+                <li class="mission-item">
+                    <strong>(2일차) 2024.11.06</strong>
+                    <ol>
+                        <li>html 기본 구조 이해하기</li>
+                        <li>html 폼 요소 이해하기</li>
+                        <li>html table 기본 이해하기</li>
+                        <li>다양한 입력폼 만들기</li>
+                        <li>공간 분할 태그-시맨틱 태그 이해하기</li>
+                    </ol>
+                </li>
+            </ul>
+        </main>
+        <footer>DEEP DIVE mission page</footer>
+    </body>
+</html>
