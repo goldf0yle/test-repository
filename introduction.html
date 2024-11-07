@@ -2,43 +2,225 @@
 <html lang="en">
     <head>
         <title>이규진</title>
+        <link rel="stylesheet" href="./index.css">
+        <style>
+            header {
+                text-align: center;
+                height: 60px;
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 60px;
+            }
+            h1 {
+                width: 100%;
+                padding-bottom: 8px;
+                border-bottom: 1px solid #b9b9b9;
+                margin-bottom: 0;
+            }
+            h2 {
+                width: 100%;
+                margin-bottom: 0;
+                background-color: #e8e8e8;
+                box-sizing: border-box;
+                padding: 8px 10px;
+            }
+            a {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+                display: block;
+            }
+            a:hover {
+                font-weight: 700;
+            }
+            ul {
+                list-style: none;
+                padding: 0 10px;
+            }
+            li {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+            main ul:not(.tag-list) {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+
+            nav {
+                display: flex;
+                width: 100%;
+                height: 80px;
+                justify-content: center;
+            }
+            nav > ul {
+                padding: 0;
+                width: fit-content;
+                display: flex;
+                align-items: center;
+                gap: 24px;
+            }
+            nav > ul > li {
+                box-sizing: border-box;
+                padding: 2px 4px;
+                border-radius: 4px;
+                transition: background-color 0.3s;
+                background-color: transparent;
+            }
+            nav > ul > li:hover {
+                background-color: #EEEEEE;
+            }
+
+            main {
+                width: 800px;
+                margin: 30px auto;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            main p {
+                padding: 0 10px;
+                line-height: 22px;
+            }
+
+            form {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 16px;
+                margin-bottom: 16px;
+            }
+            form > input {
+                width: 100%;
+                height: 36px;
+                box-sizing: border-box;
+                border-radius: 8px;
+                border: 1px solid #c2c2c2;
+                padding: 8px;
+            }
+            .form-button {
+                width: 100%;
+            }
+            .form-button > input {
+                width: 100%;
+                height: 36px;
+                box-sizing: border-box;
+                border-radius: 8px;
+                border: none;
+                cursor: pointer;
+                transition: all 0.2s;
+            }
+
+            .info {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .info a {
+                font-size: 14px;
+                color: #797979
+            }
+            .info a:hover {
+                color: #222222
+            }
+            li .item-detail {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .tag-list {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+            .tag {
+                width: fit-content;
+                height: fit-content;
+                box-sizing: border-box;
+                padding: 4px 8px;
+                background-color: #d4efd4;
+                border-radius: 8px;
+            }
+
+            footer {
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                background-color: #FFFFFF;
+                box-sizing: border-box;
+                border-top: 1px solid #d2d2d2;
+            }
+        </style>
+    </head>
     <body>
-        <header><a href="/index.html">돌아가기</a></header>
-        <h1>이규진 / Kyujin Lee</h1>
-        <p>
-            산업디자인과에서 디자인을 전공하고 디자이너로 일하다가 코딩을 접하게 되어 직무를 바꾸게 되었습니다.<br/>
-            코딩을 처음 배우기 시작했을 때는 iOS 개발이었기 때문에 <strong><i>swift</i></strong>를 사용했습니다.<br/>
-            여전히 그림그리기를 좋아해서 취미로 하고 있습니다.
-        </p>
-        <br>
-        <h2>Career</h2>
-        <ul>
-            <li>2021-2024 CODECRAIN</li>
-            <li>2020-2021 KLIO Design studio</li>
-        </ul>
-        <br>
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>TypeScript</li>
-            <li>React.js</li>
-            <li>Next.js</li>
-            <li>Emotion</li>
-            <li>Styled-Component</li>
-            <li>Tailwind</li>
-            <li>Vercel</li>
-            <li>Firebase</li>
-            <li>Figma</li>
-            <li>Photoshop</li>
-            <li>Illustrator</li>
-            <li>Blender</li>
-        </ul>
-        <br>
-        <h2>Education</h2>
-        <ul>
-            <li>2013-2020 홍익대학교 산업디자인과</li>
-        </ul>
+        <header><a href="/index.html">DEEP DIVE</a></header>
+        <nav>
+            <ul>
+                <li><a href="/introduction.html">introduction</a></li>
+                <li><a href="/form.html">form</a></li>
+                <li><a href="/table.html">table</a></li>
+                <li><a href="/inputs.html">inputs</a></li>
+                <li><a href="/sementic.html">sementic</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>이규진 / Kyujin Lee</h1>
+            <p>
+                산업디자인과에서 디자인을 전공하고 디자이너로 일하다가 코딩을 접하게 되어 직무를 바꾸게 되었습니다.<br/>
+                코딩을 처음 배우기 시작했을 때는 iOS 개발이었기 때문에 <strong><i>swift</i></strong>를 사용했습니다.<br/>
+                여전히 그림그리기를 좋아해서 취미로 하고 있습니다.
+            </p>
+            <br>
+            <h2>Career</h2>
+            <ul>
+                <li>2021-2024 CODECRAIN</li>
+                <li>2020-2021 KLIO Design studio</li>
+            </ul>
+            <br>
+            <h2>Skill</h2>
+            <ul class="tag-list">
+                <li class="tag">HTML</li>
+                <li class="tag">CSS</li>
+                <li class="tag">JavaScript</li>
+                <li class="tag">TypeScript</li>
+                <li class="tag">React.js</li>
+                <li class="tag">Next.js</li>
+                <li class="tag">Emotion</li>
+                <li class="tag">Styled-Component</li>
+                <li class="tag">Tailwind</li>
+                <li class="tag">Vercel</li>
+                <li class="tag">Firebase</li>
+                <li class="tag">Figma</li>
+                <li class="tag">Photoshop</li>
+                <li class="tag">Illustrator</li>
+                <li class="tag">Blender</li>
+            </ul>
+            <br>
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <img src="./ic-mail.png" alt="mail icon" width="24px" height="24px">
+                    <div class="item-detail">
+                        <strong class="name">홍익대학교 산업디자인과</strong>
+                        <span class="period">2013-2020 </span>
+                    </div>
+                </li>
+            </ul>
+            <br>
+            <h2>Link</h2>
+            <ul>
+                <li><img src="./ic-mail.png" alt="mail icon" width="24px" height="24px"><a href="mailto:kyujinnnlee@gmail.com">kyujinnnlee@gmail.com</a></li>
+                <li><img src="./ic-githb.png" alt="github icon" width="24px" height="24px"><a href="https://github.com/goldf0yle?tab=repositories">goldf0yle</a></li>
+                <li><img src="./ic-velog.webp" alt="velog icon" width="24px" height="24px"><a href="https://velog.io/@goldf0yle/posts">goldf0yle.log</a></li>
+            </ul>
+        </main>
     </body>
 </html>

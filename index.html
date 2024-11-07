@@ -46,13 +46,45 @@
             }
 
             main {
-                width: 1200px;
+                width: 600px;
                 margin: 0 auto;
+            }
+            main .main-header {
+                margin: 36px 0;
+                width: 100%;
+                height: 80px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                /* background: linear-gradient(to bottom,#c5d6e6,#004b73); */
+                background: #004b73;
+                box-sizing: border-box;
+                border-radius: 16px;
+                font-size: 20px;
             }
             main > ul {
                 display: flex;
                 flex-direction: column;
-                gap: 24px;
+                gap: 48px;
+            }
+            main ol >li {
+                line-height: 24px;
+            }
+            .mission-item {
+                display: flex;
+                align-items: flex-start;
+                gap: 36px;
+            }
+            .mission-item .day-info {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .mission-item .day-info strong {
+                font-size: 24px;
+            }
+            .mission-item .day-info span {
+                color: #797979;
             }
 
             footer {
@@ -67,6 +99,7 @@
                 border-top: 1px solid #d2d2d2;
             }
         </style>
+    </head>
     <body>
         <header><a href="/index.html">DEEP DIVE</a></header>
         <nav>
@@ -76,13 +109,19 @@
                 <li><a href="/table.html">table</a></li>
                 <li><a href="/inputs.html">inputs</a></li>
                 <li><a href="/sementic.html">sementic</a></li>
+                <li><a href="/bootstrap.html">bootstrap</a></li>
             </ul>
         </nav>
         <main>
-            <h2>DEEP DIVE MISSION</h2>
+            <div class="main-header">
+                <h2 style="color: #FFFFFF;">🫧🤿 DEEP DIVE MISSION 🏁<span style="display: inline-block;transform: scaleX(-1);">🫧</span></h2>
+            </div>
             <ul>
                 <li class="mission-item">
-                    <strong>(1일차) 2024.11.05</strong>
+                    <div class="day-info">
+                        <strong>DAY 1</strong>
+                        <span> 2024.11.05</span>
+                    </div>
                     <ol>
                         <li>(구름EXP) Github 프로필 생성 및 EXP 프로필 연동하기</li>
                         <li>새로운 local repository 생성 및 연동하기</li>
@@ -94,13 +133,29 @@
                     </ol>
                 </li>
                 <li class="mission-item">
-                    <strong>(2일차) 2024.11.06</strong>
+                    <div class="day-info">
+                        <strong>DAY 2</strong>
+                        <span> 2024.11.06</span>
+                    </div>
                     <ol>
                         <li>html 기본 구조 이해하기</li>
                         <li>html 폼 요소 이해하기</li>
                         <li>html table 기본 이해하기</li>
                         <li>다양한 입력폼 만들기</li>
                         <li>공간 분할 태그-시맨틱 태그 이해하기</li>
+                    </ol>
+                </li>
+                <li class="mission-item">
+                    <div class="day-info">
+                        <strong>DAY 3</strong>
+                        <span> 2024.11.07</span>
+                    </div>
+                    <ol>
+                        <li>(CSS) external 방식-외부파일 연결</li>
+                        <li>(CSS) internal 방식-태그 사용</li>
+                        <li>(CSS) inline 방식-html 태그 내 사용</li>
+                        <li>(CSS) 프레임워크(Bootstrap 등)를 이용한 레이아웃 만들기</li>
+                        <li>(CSS) CSS 변수와 프레임워크(Bootstrap 등)를 결합한 웹 페이지 제작</li>
                     </ol>
                 </li>
             </ul>
